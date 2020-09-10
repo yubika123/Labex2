@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Exercise 4</title>
+
+    <script>
+        let btn = document.querySelector('button');
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        function changeBgColor() {
+            let rCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rCol;
+        }
+    </script>
+</head>
+<body>
+    <p>Hello!!! I m Shreeya Shakya</p>
+    <button onclick="changeBgColor()">Change color</button>
+</body>
+</html>

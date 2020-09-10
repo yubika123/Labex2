@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Exercise 2 </title>
+    <style>
+        #text{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="text">Change the text on click</h1>
+<br>
+<p id="date">Click the button to see Date And Time:</p>
+<button id ="date-btn">Click Me</button>
+    <script>
+var text = document.getElementById("text");
+var date = document.getElementById("date");
+var btn = document.getElementById("date-btn");
+text.addEventListener("click",function(){
+
+text.innerHTML = "Text Changed";
+
+})
+btn.addEventListener("click",function(){
+var current_date = new Date();
+date.innerHTML = current_date;
+
+})
+
+    </script>
+</body>
+</html>
